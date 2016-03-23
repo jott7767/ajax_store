@@ -1,0 +1,23 @@
+<h1>Products</h1>
+<hr />
+<button class='btn-large pink darken-4 waves-effect waves-light' id='add_product'>Add Product</button>
+
+
+<div class= 'container'>
+<form id='new_product' class='hide edit'>
+  <input placeholder="product name" id='product_name' name='product[name]' required=true />
+  <input placeholder='base price' id='product_price' name='product[base_price]' type='number' required=true />
+  <input placeholder='description' id='product_description' name='product[description]' />
+  <input placeholder='quantity' type='number' id='product_quantity' name='product[quanity_on_hand]' />
+  <input placeholder='color' id='product_color' name='product[color]' />
+  <input placeholder='weight' id='product_weight' name='product[weight]' />
+  <input placeholder='other attributes' id='product_attr' name='product[other_attributes]' />
+  <input type='hidden' name='id' id='product_id' />
+  <button class='btn' id='new_button' type='submit'>Submit</button>
+  <button class='btn hide' id='edit_button' type='submit'>Update</button>
+</form>
+</div>
+
+<div id='products' class='row'>
+
+</div>

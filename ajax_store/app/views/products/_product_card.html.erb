@@ -1,0 +1,19 @@
+
+<div class="col s3 m3">
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <span class="card-title"><%= @product[:name] %></span>
+      <p class='hide hidden'>Price: <%= @product['base_price'] %></p>
+      <p>Description: <%= @product['description']%></p>
+      <p>Quantity: <%= @product['quanity_on_hand'] %></p>
+      <p class='hide hidden'>Color: <%= @product['color'] %></p>
+      <p class='hide hidden'>Weight: <%= @product['weight'] %></p>
+      <p class='hide hidden'>Other Attributes: <%= @product['other_attributes'] %></p>
+    </div>
+    <div class="card-action">
+        <a href=<%= @product[:id] %> id='edit_product'>Edit Product</a>
+        <a href=<%= @product[:id] %> id='delete_product'>Remove Product</a>
+        <a href=<%= @product[:id] %> id='show_product'>Show</a>
+    </div>
+  </div>
+</div>
